@@ -1,7 +1,77 @@
+/**************************************** 
+  HOME - Hero Section
+       - Swiper styles in swiper-slider.css file
+       - Hero CTA
+*****************************************/
+
 .hero {
-    display:flex;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    transform: translateY(-2%);
 }
 
-.hero__headline {}
+.hero__slider {
+    background: url(../images/GettyImages-481491445.png) no-repeat;
+    background-size: 52%;
+    background-position: right -155px bottom 119px;
+    padding: 100px;
+    height: 84%;
+}
 
-.hero__lead {}
+.hero__text {
+    color: $light-color;
+}
+
+.hero__glyphicon {
+    color: $dark-color;
+    font-size: 2rem;
+    margin-right: 10px;
+    margin-left: -13px;
+}
+
+
+/** HERO CTA **/
+
+a {
+    &.text__link__hero::before {
+        width: 113%;
+        top: 16.5px;
+        left: -30px;
+        height: 90%;
+        border: 13px solid #191c22;
+    }
+    &.text__link_hero:last-of-type::before {
+        width: 116%;
+        top: 12.1px;
+        left: -30px;
+        height: 89%;
+    }
+    &.text__link__cta {
+        border: 10px solid #191c22;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 900;
+        font-size: 9rem;
+        letter-spacing: -4px;
+        padding: 0 15px;
+    }
+}
+
+.text__link-label {
+    color: #f8f5f5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 1px;
+    margin-top: 50px;
+    &:nth-of-type(1) {
+        margin-top: -47px;
+    }
+}
+
+.swiper-static-cta {
+    position: absolute;
+    top: 130%;
+    left: 0;
+    background: transparent;
+    z-index: 1;
+}

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Sass Bootstrap Starter Template</title>
+  <title>Pinnacle bank</title>
   <link rel="stylesheet" href="/assets/css/style.css">
 
   <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -22,64 +22,452 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+  <body>
+    <!-- =========== NAVBAR  =========== -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
 
-<body>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Personal
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+                <li>
+                  <a href="#">Something else here</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">One more separated link</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Business
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+                <li>
+                  <a href="#">Something else here</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">One more separated link</a>
+                </li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="#">Planning Tools
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Locations</a>
+            </li>
+            <li>
+              <a href="#">Open Account</a>
+            </li>
+            <li>
+              <a href="#">Login</a>
+            </li>
+          </ul>
+          </Business>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-          aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Project name</a>
+    <!-- =========== HERO: Swiper Slider + CTA buttons =========== -->
+    <section class="hero">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="swiper-slide__title" data-swiper-parallax="300">
+              <h1 class="text--light">
+                <a class="text__link text__link__hero" href="#">Sign up</a>
+                for
+                <br/>e-Statements</h1>
+            </div>
+            <div class="swiper-slide__subtitle" data-swiper-parallax="200">
+              <h2 class="text--dark">Fast, Convenient, Secure
+                <br/> &amp; Environmentally Friendly
+              </h2>
+            </div>
+            <img class="swiper-slide__image" src="./images/GettyImages-481491445.png" alt="">
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="swiper-slide__title" data-swiper-parallax="300">
+              <h1 class="text--light">
+                <a class="text__link text__link__hero" href="#">Enroll</a>
+                Online
+                <br/>Today</h1>
+            </div>
+            <div class="swiper-slide__subtitle" data-swiper-parallax="200">
+              <h2 class="text--dark">Finally, Banking at Your
+                <br/>Convenience
+              </h2>
+            </div>
+            <img class="swiper-slide__image" src="./images/GettyImages-481491445.png" alt="">
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="swiper-slide__title" data-swiper-parallax="300">
+              <h1 class="text--light">Pinnacle
+                <br/>Offers
+                <a class="text__link text__link__hero" href="#">Loans</a>
+              </h1>
+            </div>
+            <div class="swiper-slide__subtitle" data-swiper-parallax="200">
+              <h2 class="text--dark">Choose From a Variety of
+                <br/> Personal &amp; Home Equity Loans
+              </h2>
+            </div>
+            <img class="swiper-slide__image" src="./images/GettyImages-481491445.png" alt="">
+          </div>
+
+        </div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="prev"></div>
+        <div class="next"></div>
       </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active">
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+      <!-- End Swiper -->
+    </section>
+
+    <div class="container swiper-static-cta">
+      <div class="row">
+        <div class="div col-md-12">
+          <p class="text__link-label">
+            <span class="hero__glyphicon glyphicon glyphicon-log-in"></span>Online Banking:</p>
+          <a class="text__link__cta" href="#">Account Login</a>
+          <p class="text__link-label" text__link-label>
+            <span class="hero__glyphicon glyphicon glyphicon-pencil"></span>Online Banking</p>
+          <a class="text__link__cta" href="#">Enrollment</a>
+          <p class="text__link-label">
+            <span class="hero__glyphicon glyphicon glyphicon-credit-card"></span>Lost or Stolen Card?</p>
+          <a class="text__link__cta" href="#">Report</a>
+        </div>
       </div>
-      <!--/.nav-collapse -->
     </div>
-  </nav>
 
-  <div class="container">
-  <div class="jumbotron">
-    <h1>Bootstrap Sass Starter</h1>
-    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">I'm a Button</a>
-    </p>
-  </div>
-  </div>
+    <!-- =========== CYBER CTA SECTION  =========== -->
+    <section class="container bg__pinnacle--right">
+      <div class="row">
+        <div class="col-md-6 triangle--right"></div>
+        <div class="content--pinnacle col-md-6">
+          <h1 class="title">Cyber
+            <br/>Security</h1>
+          <h2 class="sub-title">Stop Fraud Before It
+            <br/>Happens To You
+          </h2>
+          <a href="#" class="button">
+            Learn How
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <!-- /.container -->
+    <!-- =========== SERVICES SECTION  =========== -->
+    <section class="container bg__pinnacle--left">
+      <!-- heading -->
+      <div class="row services__heading">
+        <div class="col-md-12 ">
+          <h1>Bank
+            <br/>Services</h1>
+        </div>
+      </div>
+      <!-- SERVICES -->
+      <div class="services container-fluid no-margin no-padding ">
+        <!-- first service -->
+        <div class="row flex__parent no-margin service">
+          <div class="col-sm-6 service__text no-padding flex__parent">
+            <div class="center-text">
+              <h2>
+                <a class="text__link text__link__services" href="#">Personal</a> Banking</h2>
+              <p>Velitatatus. Arum voluptaquia quam harum aspis arum consequo tem voluptatiam ilibus eatur aliqui acestin vercitat
+                est, o cid undae. Pos il idestiorro</p>
+              <hr class='line--bottom'>
+            </div>
+          </div>
+          <div class="col-sm-6 no-padding service__image  ">
+            <img class='img-responsive' src="./images/pexels-photo-157023.jpg" alt="">
+          </div>
+        </div>
+        <!-- second service -->
+        <div class="row flex__parent no-margin no-padding service">
+          <div class="col-sm-6 service__text no-padding flex__parent">
+            <div class="center-text">
+              <h2>
+                <a class="text__link text__link__services" href="#">Business</a>Banking</h2>
+              <p>Velitatatus. Arum voluptaquia quam harum aspis arum consequo tem voluptatiam ilibus eatur aliqui acestin vercitat
+                est, o cid undae. Pos il idestiorro</p>
+              <hr class='line--bottom'>
+            </div>
+          </div>
+          <div class="col-sm-6 no-padding service__image  ">
+            <img class='img-responsive' src="./images/pexels-photo-544716.jpeg" alt="">
+          </div>
+        </div>
+        <!-- third service -->
+        <div class="row flex__parent no-margin no-padding service">
+          <div class="col-sm-6 service__text no-padding flex__parent">
+            <div class="center-text">
+              <h2>
+                <a class="text__link text__link__services" href="#">Bill Pay</a>Online</h2>
+              <p>Velitatatus. Arum voluptaquia quam harum aspis arum consequo tem voluptatiam ilibus eatur aliqui acestin vercitat
+                est, o cid undae. Pos il idestiorro</p>
+              <hr class='line--bottom'>
+            </div>
+          </div>
+          <div class="col-sm-6 no-padding service__image  ">
+            <img class='img-responsive' src="./images/accountant-accounting-adviser-advisor-159804.jpg" alt="">
+          </div>
+        </div>
+        <!-- fourth service -->
+        <div class="row flex__parent no-margin service">
+          <div class="col-sm-6 service__text no-padding flex__parent">
+            <div class="center-text">
+              <h2>
+                <a class="text__link text__link__services" href="#">Order Checks</a>Online</h2>
+              <p>Velitatatus. Arum voluptaquia quam harum aspis arum consequo tem voluptatiam ilibus eatur aliqui acestin vercitat
+                est, o cid undae. Pos il idestiorro</p>
+              <hr class='line--bottom'>
+            </div>
+          </div>
+          <div class="col-sm-6 no-padding service__image  ">
+            <img class='img-responsive' src="./images/writing-notes-idea-conference.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- end of services container -->
+    </section>
+    <!-- END OF SERVICES SECTION -->
 
-<div class="container">
-    <p>Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit,
-    eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh. Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh.
-    Proin eget tortor risus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan
-    id imperdiet et, porttitor at sem. Proin eget tortor risus.</p>
-</div>
-  <!-- Jquery
+    <!-- =========== QUICK LINKS SECTION =========== -->
+    <section id="quick-links" class="container">
+      <!-- heading -->
+      <div class="row services__heading">
+        <div class="col-md-12 ">
+          <h1>Quick Links</h1>
+        </div>
+      </div>
+      <!-- links: row 1 -->
+      <div class="row">
+        <div class="col-md-4">
+          <ul>
+            <li>
+              <h3>
+                <a href="">Personal Banking</a>
+              </h3>
+            </li>
+            <li>
+              <a href="">Personal Checking</a>
+            </li>
+            <li>
+              <a href="">Personal Savings & Investments Personal</a>
+            </li>
+            <li>
+              <a href="">Personal & Home Loans</a>
+            </li>
+            <li>
+              <a href="">Additional Banking Service</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <ul>
+            <li>
+              <h3>
+                <a href="">Business Banking</a>
+              </h3>
+            </li>
+            <li>
+              <a href="">Business Checking</a>
+            </li>
+            <li>
+              <a href="">Business Savings</a>
+            </li>
+            <li>
+              <a href="">Business Loans</a>
+            </li>
+            <li>
+              <a href="">Other Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- links: row 2 -->
+      <div class="row">
+        <div class="col-md-4">
+          <ul>
+            <li>
+              <h3>
+                <a href="">Locations</a>
+              </h3>
+            </li>
+            <li>
+              <a href="">Jasper, AL</a>
+            </li>
+            <li>
+              <a href="">Sumiton, AL</a>
+            </li>
+            <li>
+              <a href="">Haleyville, AL</a>
+            </li>
+            <li>
+              <a href="">Birmingham, AL</a>
+            </li>
+            <li>
+              <a href="">Gardendale, AL</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul>
+            <li>
+              <h3>
+                <a href="">Online Banking</a>
+              </h3>
+            </li>
+            <li>
+              <a href="">Online Banking</a>
+            </li>
+            <li>
+              <a href="">Online Banking Home</a>
+            </li>
+            <li>
+              <a href="">Current User Login</a>
+            </li>
+            <li>
+              <a href="">Online Bill Pay</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul>
+            <li>
+              <h3>
+                <a href="">SEO Text: </a>
+              </h3>
+            </li>
+            <p>Ignihil int. Ipsam consequo blabo. Ovit o cienim ventiae in evellique. Pa sequas sae sumqui.</p>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== FOOTER =========== -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row flex__parent">
+          <div class="col-md-4 col-md-offset-4">
+            <img class="footer__logo" src="./images/membrFDIC.jpg" alt="">
+            <img class="footer__logo" src="./images/EHLlogo.jpg" alt="">
+          </div>
+          <div class="footer__credits col-md-4">
+            <small>&copy;2017 Pinnacle Bank
+              <br/> All rights reserve. Designed by
+              <strong>Complulse</strong>
+            </small>
+          </div>
+          <div class="col-md-8 col-md-offset-4">
+            <ol class="breadcrumb">
+              <li>
+                <a class="active" href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Locations</a>
+              </li>
+              <li>
+                <a href="#">Planning Tools</a>
+              </li>
+              <li>
+                <a href="#">Personal</a>
+              </li>
+              <li>
+                <a href="#">Business</a>
+              </li>
+              <li>
+                <a href="#">Online Banking</a>
+              </li>
+              <li>
+                <a href="#">Rates</a>
+              </li>
+              <li>
+                <a href="#">Press Releases</a>
+              </li>
+              <li>
+                <a href="#">Disclosures</a>
+              </li>
+              <li>
+                <a href="#">Lobby Signs</a>
+              </li>
+              <li>
+                <a href="#">Privacy Disclosure</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Jquery
     =============================== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
   =============================== -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Swiper JS
+    =============================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
+    <script src="js/swiper-slider.js"></script>
 
-  <!-- Placed at the end of the document so the pages load faster -->
-</body>
+  </body>
 
 </html>

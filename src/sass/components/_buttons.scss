@@ -1,3 +1,13 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+/* Global - Button */
+
+.button {
+    text-decoration: none;
+    border: 10px solid $brand-color;
+    padding: 10px;
+    font-size: 16px;
+    color: $light-color;
+}

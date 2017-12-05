@@ -1,0 +1,68 @@
+/**************************************** 
+  HOME - Cyber CTA -- Right Pinnacle
+*****************************************/
+
+.bg__pinnacle--right {
+  background: transparent;
+  justify-content: flex-end;
+  &::before {
+    content: '';
+    position: absolute;
+    background: $dark-color;
+    height: 1500px;
+    width: 2000px;
+    top: -958px;
+    right: -330px;
+    transform: skew(45deg, -38deg);
+    transform-origin: 100% 30%;
+    z-index: -1;
+  }
+  >.row {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+  }
+}
+
+.triangle--right {
+  align-self: center;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 60px solid $light-color;
+}
+
+.title {
+  line-height: 0.9em;
+  color: $brand-color;
+}
+
+.sub-title {
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 200;
+  color: $light-color;
+}
+
+
+/**************************************** 
+  HOME - Left Pinnacle
+*****************************************/
+
+.bg__pinnacle--left {
+  padding: 0;
+  background: transparent;
+  justify-content: flex-start;
+  &::before {
+    content: '';
+    position: absolute;
+    background: $light-color;
+    height: 1500px;
+    width: 1920px;
+    left: -1850px;
+    transform: skew(55deg, -40deg);
+    transform-origin: 90% top;
+    z-index: -1;
+  }
+}

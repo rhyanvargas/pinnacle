@@ -1,3 +1,45 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+footer {
+    padding-bottom: 10px;
+    a:link {
+        color: inherit;
+    }
+}
+
+.footer__logo {
+    width: 129px;
+    height: 129px;
+}
+
+.footer__credits {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.breadcrumb {
+    color: $dark-color;
+    text-align: right;
+    background: transparent;
+    border-radius: 0;
+    border-top: 2px solid $dark-color;
+    margin-top: 25px;
+    padding: 25px 0;
+    >li {
+        &::after {
+            content: "|";
+            color: $dark-color;
+            padding: 0 5px;
+        }
+        &::before,
+        &:last-of-type::after {
+            content: none !important;
+        }
+    }
+}
+
+/* Quick Links Section */
+section:last-of-type {
+    background: #f8f5f5;
+}

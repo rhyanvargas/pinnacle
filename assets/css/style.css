@@ -1836,7 +1836,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #545454;
+  color: #333333;
   background-color: #fff;
 }
 
@@ -3958,7 +3958,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #949494;
+  color: #737373;
 }
 
 @media (min-width: 768px) {
@@ -6216,7 +6216,7 @@ a.badge:hover, a.badge:focus {
 
 .thumbnail .caption {
   padding: 9px;
-  color: #545454;
+  color: #333333;
 }
 
 a.thumbnail:hover,
@@ -8206,12 +8206,12 @@ body {
  * Basic styles for links
  */
 a {
-  color: #0e7c7b;
+  color: #007a33;
   text-decoration: none;
 }
 
 a:hover, a:active, a:focus {
-  color: #545454;
+  color: #333333;
   text-decoration: underline;
 }
 
@@ -8219,12 +8219,75 @@ a:hover, a:active, a:focus {
  * Basic typography style for copy text
  */
 body {
-  color: #545454;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #191c22;
+  font: normal 16px/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 h1 {
-  color: #0e7c7b;
+  color: #007a33;
+}
+
+h2 {
+  font: italic 4em/1.5 "Libre Baskerville", serif;
+  /* style size / line-height family */
+}
+
+/**************************************** 
+ LINKS
+*****************************************/
+/**
+ * MAIN LINKS:
+ * Links (must be placed in this order to allow styles to properlycascade)
+ */
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+  font-weight: 600;
+}
+
+.active {
+  color: inherit;
+  font-weight: 600;
+}
+
+/**
+  * LINK MODIFIERS:
+  * 1. Adds border around link
+  * 2. Makes text dark
+**/
+a.text__link {
+  /* 1 */
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+a.text__link::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -7%;
+  border: 13px solid #191c22;
+  bottom: -2.2%;
+  right: -7%;
+}
+
+a.text__link--dark {
+  /* 2 */
+  color: #191c22;
 }
 
 /**
@@ -8234,6 +8297,15 @@ h1 {
   clear: both;
   content: '';
   display: table;
+}
+
+/* Removes margin and padding */
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
 }
 
 /**
@@ -8252,12 +8324,30 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /* 2 */
   padding-left: 20px;
   /* 3 */
   padding-right: 20px;
   /* 3 */
   width: 100%;
   /* 1 */
+}
+
+/**
+ * Makes element a flex parent
+ * ...for easy readability in HTML
+ **/
+.flex__parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /**
@@ -8287,4 +8377,363 @@ h1 {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+/**************************************** 
+  MAIN NAVBAR (top)
+*****************************************/
+.navbar {
+  border-radius: 0;
+  padding-top: 103px;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+}
+
+/**
+ * Anything Layout related on containers, divs, sections etc..
+**/
+.row {
+  padding: 0 100px;
+  margin: 0;
+  width: 100%;
+}
+
+footer {
+  padding-bottom: 10px;
+}
+
+footer a:link {
+  color: inherit;
+}
+
+.footer__logo {
+  width: 129px;
+  height: 129px;
+}
+
+.footer__credits {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: right;
+}
+
+.breadcrumb {
+  color: #191c22;
+  text-align: right;
+  background: transparent;
+  border-radius: 0;
+  border-top: 2px solid #191c22;
+  margin-top: 25px;
+  padding: 25px 0;
+}
+
+.breadcrumb > li::after {
+  content: "|";
+  color: #191c22;
+  padding: 0 5px;
+}
+
+.breadcrumb > li::before, .breadcrumb > li:last-of-type::after {
+  content: none !important;
+}
+
+/* Quick Links Section */
+section:last-of-type {
+  background: #f8f5f5;
+}
+
+/**************************************** 
+  HOME - Hero Section
+       - Swiper styles in swiper-slider.css file
+       - Hero CTA
+*****************************************/
+.hero {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  -webkit-transform: translateY(-2%);
+      -ms-transform: translateY(-2%);
+          transform: translateY(-2%);
+}
+
+.hero__slider {
+  background: url(../images/GettyImages-481491445.png) no-repeat;
+  background-size: 52%;
+  background-position: right -155px bottom 119px;
+  padding: 100px;
+  height: 84%;
+}
+
+.hero__text {
+  color: #f8f5f5;
+}
+
+.hero__glyphicon {
+  color: #191c22;
+  font-size: 2rem;
+  margin-right: 10px;
+  margin-left: -13px;
+}
+
+/** HERO CTA **/
+a.text__link__hero::before {
+  width: 113%;
+  top: 16.5px;
+  left: -30px;
+  height: 90%;
+  border: 13px solid #191c22;
+}
+
+a.text__link_hero:last-of-type::before {
+  width: 116%;
+  top: 12.1px;
+  left: -30px;
+  height: 89%;
+}
+
+a.text__link__cta {
+  border: 10px solid #191c22;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  font-size: 9rem;
+  letter-spacing: -4px;
+  padding: 0 15px;
+}
+
+.text__link-label {
+  color: #f8f5f5;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1px;
+  margin-top: 50px;
+}
+
+.text__link-label:nth-of-type(1) {
+  margin-top: -47px;
+}
+
+.swiper-static-cta {
+  position: absolute;
+  top: 130%;
+  left: 0;
+  background: transparent;
+  z-index: 1;
+}
+
+/**************************************** 
+  HOME - Cyber CTA -- Right Pinnacle
+*****************************************/
+.bg__pinnacle--right {
+  background: transparent;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.bg__pinnacle--right::before {
+  content: '';
+  position: absolute;
+  background: #191c22;
+  height: 1500px;
+  width: 2000px;
+  top: -958px;
+  right: -330px;
+  -webkit-transform: skew(45deg, -38deg);
+      -ms-transform: skew(45deg, -38deg);
+          transform: skew(45deg, -38deg);
+  -webkit-transform-origin: 100% 30%;
+      -ms-transform-origin: 100% 30%;
+          transform-origin: 100% 30%;
+  z-index: -1;
+}
+
+.bg__pinnacle--right > .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.triangle--right {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 60px solid #f8f5f5;
+}
+
+.title {
+  line-height: 0.9em;
+  color: #007a33;
+}
+
+.sub-title {
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 200;
+  color: #f8f5f5;
+}
+
+/**************************************** 
+  HOME - Left Pinnacle
+*****************************************/
+.bg__pinnacle--left {
+  padding: 0;
+  background: transparent;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.bg__pinnacle--left::before {
+  content: '';
+  position: absolute;
+  background: #f8f5f5;
+  height: 1500px;
+  width: 1920px;
+  left: -1850px;
+  -webkit-transform: skew(55deg, -40deg);
+      -ms-transform: skew(55deg, -40deg);
+          transform: skew(55deg, -40deg);
+  -webkit-transform-origin: 90% top;
+      -ms-transform-origin: 90% top;
+          transform-origin: 90% top;
+  z-index: -1;
+}
+
+/**************************************** 
+  HOME - Services section 
+*****************************************/
+.service__text {
+  height: 100%;
+}
+
+.service__text h2 {
+  line-height: 1.4em;
+}
+
+.services__heading {
+  margin-top: 16%;
+  margin-bottom: 50px;
+}
+
+/* add .line-bottom to an <hr> tag  */
+.line--bottom {
+  width: 150px;
+  margin-right: 0;
+  border: none;
+  border-bottom: 4px solid #191c22;
+}
+
+a.text__link__services {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+.text__link__services::before {
+  border: 5px solid #007a33;
+}
+
+/* Alternates the order of service__image modules */
+.services :nth-child(even) .service__image:nth-of-type(2) {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+/*********************************************************************
+  Hero Slider Section
+    - Styles also in "Home - Hero Slider section" of style.css file
+**********************************************************************/
+.swiper-container {
+  width: 100%;
+  height: 1500px;
+}
+
+.swiper-wrapper {
+  position: relative;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #f8f5f5;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 155px 184px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide__image {
+  position: absolute;
+  height: 69%;
+  right: -144px;
+  top: -50px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.swiper-slide__title {
+  /* font-size: 41px; */
+  font-weight: 300;
+}
+
+.swiper-slide__subtitle {
+  font-size: 1.33rem;
+  color: #191c22;
+  /* max-width: 500px; */
+}
+
+.swiper-slide__text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 25%;
+}
+
+.prev,
+.next {
+  content: '';
+  position: absolute;
+  top: 18.4%;
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+  z-index: inherit;
+}
+
+.prev {
+  /* triangle: Points right...*/
+  border-left: 90px solid #191c22;
+  left: 0;
+}
+
+.next {
+  right: 0;
+  /* triangle: Points Leftt...*/
+  border-right: 90px solid #191c22;
+}
+
+.text__link--dark {
+  color: #191c22;
+}
+
+/* Global - Button */
+.button {
+  text-decoration: none;
+  border: 10px solid #007a33;
+  padding: 10px;
+  font-size: 16px;
+  color: #f8f5f5;
 }
